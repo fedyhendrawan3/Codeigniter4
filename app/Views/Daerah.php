@@ -23,7 +23,7 @@
                 <?php endif ?>
  
                
-                <a href="" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
+                <a href="<?php echo base_url('Daerah/input/') ?>" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
                 <table class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <tr>
@@ -39,8 +39,8 @@
                                 <td><?php echo $daerah['nama_daerah'] ?></td>
                                 <td><?php echo $daerah['status'] ?></td>
                                 <td class="text-center">
-                                    <a href="<?php echo base_url('post/edit/'.$daerah['id']) ?>" class="btn btn-sm btn-primary">EDIT</a>
-                                    <a href="<?php echo base_url('post/delete/'.$daerah['id']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
+                                    <a href="<?php echo base_url('Daerah/update/'.$daerah['id_daerah']) ?>" class="btn btn-sm btn-primary">EDIT</a>
+                                    <a href="<?php echo base_url('Daerah/delete/'.$daerah['id_daerah']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
                                 </td>
                             </tr>
  

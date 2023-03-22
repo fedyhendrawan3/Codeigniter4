@@ -23,13 +23,13 @@
                 <?php endif ?>
  
                
-                <a href="" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
+                <a href="<?php echo base_url('Berita/input/') ?>" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
                 <table class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <tr>
                             <th>TITLE</th>
-                            <th>CONTENT</th>
-                               <th>CONTENT</th>
+                            <th>TANGGAL</th>
+                               <th>ISI</th>
                             <th>AKSI</th>
                         </tr>
                     </thead>
@@ -39,10 +39,10 @@
                             <tr>
                                 <td><?php echo $berita['judul'] ?></td>
                                 <td><?php echo $berita['tanggal'] ?></td>
-                                  <td><?php echo $berita['isi   '] ?></td>
+                                  <td><?php echo $berita['isi'] ?></td>
                                 <td class="text-center">
-                                    <a href="<?php echo base_url('post/edit/'.$berita['id']) ?>" class="btn btn-sm btn-primary">EDIT</a>
-                                    <a href="<?php echo base_url('post/delete/'.$berita['id']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
+                                    <a href="<?php echo base_url('Berita/update/'.$berita['id']) ?>" class="btn btn-sm btn-primary">EDIT</a>
+                                    <a href="<?php echo base_url('Berita/delete/'.$berita['id']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
                                 </td>
                             </tr>
  

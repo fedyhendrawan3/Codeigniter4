@@ -29,11 +29,44 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+//VIEW
 $routes->get('/', 'Home::index');
 $routes->get('/Berita', 'Berita::index');
 $routes->get('/Daerah', 'Daerah::index');
 $routes->get('/Pengguna', 'Pengguna::index');
 $routes->get('/Kategori', 'Kategori::index');
+
+//UPDATE VIEW
+$routes->get('/Berita/update/(:num)', 'Berita::update/$1');
+$routes->get('/Daerah/update/(:num)', 'Daerah::update/$1');
+$routes->get('/Pengguna/update/(:num)', 'Pengguna::update/$1');
+$routes->get('/Kategori/update/(:num)', 'Kategori::update/$1');
+
+//EDIT
+$routes->post('/Berita/edit', 'Berita::edit/$1');
+$routes->post('/Daerah/edit', 'Daerah::edit/$1');
+$routes->post('/Pengguna/edit', 'Pengguna::edit/$1');
+$routes->post('/Kategori/edit', 'Kategori::edit/$1');
+
+//INSERT VIEW
+$routes->add('/Berita/input', 'Berita::input');
+$routes->add('/Daerah/input', 'Daerah::input');
+$routes->add('/Pengguna/input', 'Pengguna::input');
+$routes->add('/Kategori/input', 'Kategori::input');
+
+
+//INSERT
+$routes->post('/Berita/insert', 'Berita::insert');
+$routes->post('/Daerah/insert', 'Daerah::insert');
+$routes->post('/Pengguna/insert', 'Pengguna::insert');
+$routes->post('/Kategori/insert', 'Kategori::insert');
+
+//DELETE
+$routes->add('/Berita/delete/(:num)', 'Berita::delete/$1');
+$routes->add('/Daerah/delete/(:num)', 'Daerah::delete/$1');
+$routes->add('/Pengguna/delete/(:num)', 'Pengguna::delete/$1');
+$routes->add('/Kategori/delete/(:num)', 'Kategori::delete/$1');
+
 
 /*
  * --------------------------------------------------------------------

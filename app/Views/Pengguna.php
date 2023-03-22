@@ -23,7 +23,7 @@
                 <?php endif ?>
  
                
-                <a href="" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
+                <a href="<?php echo base_url('Pengguna/input/') ?>" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
                 <table class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <tr>
@@ -41,8 +41,8 @@
                                 <td><?php echo $pengguna['nama'] ?></td>
                                 <td><?php echo $pengguna['verifikasi'] ?></td>
                                 <td class="text-center">
-                                    <a href="<?php echo base_url('post/edit/'.$pengguna['id']) ?>" class="btn btn-sm btn-primary">EDIT</a>
-                                    <a href="<?php echo base_url('post/delete/'.$pengguna['id']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
+                                    <a href="<?php echo base_url('Pengguna/update/'.$pengguna['id_pengguna']) ?>" class="btn btn-sm btn-primary">EDIT</a>
+                                    <a href="<?php echo base_url('Pengguna/delete/'.$pengguna['id_pengguna']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
                                 </td>
                             </tr>
  

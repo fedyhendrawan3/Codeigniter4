@@ -23,7 +23,7 @@
                 <?php endif ?>
  
                
-                <a href="" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
+                <a href="<?php echo base_url('Kategori/input/') ?>" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
                 <table class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <tr>
@@ -39,8 +39,8 @@
                                 <td><?php echo $kategori['nama_kategori'] ?></td>
                                 <td><?php echo $kategori['status'] ?></td>
                                 <td class="text-center">
-                                    <a href="<?php echo base_url('post/edit/'.$kategori['id']) ?>" class="btn btn-sm btn-primary">EDIT</a>
-                                    <a href="<?php echo base_url('post/delete/'.$kategori['id']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
+                                    <a href="<?php echo base_url('Kategori/update/'.$kategori['id_kategori']) ?>" class="btn btn-sm btn-primary">EDIT</a>
+                                    <a href="<?php echo base_url('Kategori/delete/'.$kategori['id_kategori']) ?>" class="btn btn-sm btn-danger">HAPUS</a>
                                 </td>
                             </tr>
  
